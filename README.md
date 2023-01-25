@@ -1,6 +1,6 @@
-##Test de JavaScript
+## [Test de JavaScript]
 
-#### este test lo resolvi con ayuda de **platzi y chat GPT**
+#### ![este test lo resolvi con ayuda de **platzi y chat GPT**](https://static.platzi.com/cdn-cgi/image/width=1024,quality=50,format=auto/media/achievements/badge-basicojs-e2ead888-428e-4f55-962c-8894aeaeacda.png)
 
 ¡Es hora de poner a prueba cuánto sabes sobre JavaScript!
 
