@@ -238,7 +238,7 @@ console.log("Mi nombre es " + completeName + ", per prefiero que me digas " + ni
 >En este código, se define una función llamada "nombreCompleto", que recibe 3 parámetros: "name", "lastname" y "nickname", que son utilizados para construir el nombre completo y el nickname, y luego se usa console.log para imprimir el mensaje en pantalla.
 >En lugar de usar variables constantes, se usan los parámetros de la función, esto permite que la función pueda ser reutilizada con diferentes valores de nombre, apellido y nickname.
 >Por ejemplo, si queremos imprimir "Mi nombre es Juan David Castro Gallego, pero prefiero que me digas juandc.":
->
+
 > _code_
 ```
 nombreCompleto("Juan David","Castro Gallego","juandc");
@@ -247,8 +247,33 @@ nombreCompleto("Juan David","Castro Gallego","juandc");
 ### 1️⃣ Responde las siguientes preguntas en la sección de comentarios:
 
 - ¿Qué es un condicional?
+
+>Un condicional es una estructura de control de flujo en programación que permite ejecutar un bloque de código solo si se cumple una determinada condición. Los condicionales suelen utilizar operadores de comparación para evaluar una expresión y determinar si se cumple o no la condición. Si la condición se cumple, se ejecuta el bloque de código dentro del condicional, y si no se cumple, se puede elegir no ejecutar nada o ejecutar un bloque diferente de código. Los condicionales más comunes son if-else, switch-case.
+
 - ¿Qué tipos de condicionales existen en JavaScript y cuáles son sus diferencias?
+
+>Existen varios tipos de condicionales en JavaScript, los más comunes son:
+>
+>if-else: Este es el condicional más básico en JavaScript. Se utiliza para ejecutar un bloque de código si se cumple una determinada condición, y otro bloque de código si no se cumple.
+>
+>if-else if-else: Este condicional es similar al anterior, pero permite especificar varias condiciones adicionales con una estructura de ramificación.
+>
+>switch-case: Este condicional es útil para comparar una variable con varios valores específicos y ejecutar diferentes bloques de código dependiendo del valor de la variable.
+>
+>ternary operator : Es un operador condicional de una sola línea, se utiliza para asignar valores a una variable dependiendo de una condición. Es una forma más corta de escribir un if-else
+>
+>La principal diferencia entre ellos es la forma en que se evalúan las condiciones y se ejecutan los bloques de código. El if-else y if-else if-else se utilizan para evaluar una o varias condiciones y ejecutar bloques de código en función de si se cumplen o no. El switch-case, se utiliza para comparar una variable con varios valores específicos y ejecutar diferentes bloques de código dependiendo del valor de la variable. Y el ternary operator, es una forma más corta de escribir un if-else.
+
 - ¿Puedo combinar funciones y condicionales?
+
+>Sí, es posible combinar funciones y condicionales en JavaScript. De hecho, es común utilizar condicionales dentro de funciones para controlar el flujo de ejecución del código.
+>
+>Por ejemplo, se puede crear una función que toma una variable como parámetro y utiliza un condicional para determinar si el valor es mayor o menor que un número específico. Dependiendo del resultado, la función puede devolver un valor o imprimir un mensaje en la consola.
+>
+>También se puede crear una función que utiliza un condicional para decidir qué otra función llamar. Es posible llamar una función dentro de otra función.
+>
+>En resumen, los condicionales y las funciones son herramientas muy poderosas de programación que se complementan entre sí y se pueden utilizar juntos para controlar el flujo de ejecución del código y organizar el código de manera eficiente.
+
 
 ###  2️⃣ Replica el comportamiento del siguiente código que usa la sentencia switch utilizando if, else y else if:
 const tipoDeSuscripcion = "Basic";
@@ -267,6 +292,30 @@ switch (tipoDeSuscripcion) {
        console.log("Tú y alguien más pueden tomar TODOS los cursos de Platzi durante un año");
        break;
 }
+
+> _code_
+
+```
+const tipoDeSuscripcion = "Basic";
+
+if (tipoDeSuscripcion === "Free") {
+console.log("Solo puedes tomar los cursos gratis");
+
+} else if (tipoDeSuscripcion === "Basic") {
+console.log("Puedes tomar casi todos los cursos de Platzi durante un mes");
+
+} else if (tipoDeSuscripcion === "Expert") {
+console.log("Puedes tomar casi todos los cursos de Platzi durante un año");
+
+} else if (tipoDeSuscripcion === "ExpertPlus") {
+console.log("Tú y alguien más pueden tomar TODOS los cursos de Platzi durante un año");
+
+} else {
+console.log("Tipo de suscripción no válida");
+}
+```
+
+>La estructura if-else if-else es similar a la sentencia switch, ya que ambas permiten evaluar varias condiciones y ejecutar diferentes bloques de código dependiendo del valor de una variable. Sin embargo, la sentencia switch tiene algunas ventajas sobre if-else if-else, ya que puede ser más fácil de leer y escribir en algunos casos.
 
 ### 3️⃣ Replica el comportamiento de tu condicional anterior con if, else y else if, pero ahora solo con if (sin else ni else if).
 💡 Bonus: si ya eres una experta o experto en el lenguaje, te desafío a comentar cómo replicar este comportamiento con arrays u objetos y un solo condicional. 😏
