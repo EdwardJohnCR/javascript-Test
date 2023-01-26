@@ -1,8 +1,10 @@
-## [Test de JavaScript]
+# Test de JavaScript
 
-#### ![este test lo resolvi con ayuda de **platzi y chat GPT**](https://static.platzi.com/cdn-cgi/image/width=1024,quality=50,format=auto/media/achievements/badge-basicojs-e2ead888-428e-4f55-962c-8894aeaeacda.png)
+######  Yo use Platzi y chat GPT en las soluciones!    ![logo JavaScript](https://static.platzi.com/cdn-cgi/image/width=1024,quality=50,format=auto/media/achievements/badge-basicojs-e2ead888-428e-4f55-962c-8894aeaeacda.png)
 
-¡Es hora de poner a prueba cuánto sabes sobre JavaScript!
+
+ Es hora de poner a prueba cuánto sabes sobre JavaScript!
+ ==
 
 Esta lectura es una prueba de JavaScript. A diferencia de un examen, nadie te obligará a nada. Puedes hacer trampa y saltar a la siguiente clase, ese es el camino fácil. Pero tengo mucha fe en ti, confío en que seguirás mis consejos y no avanzarás a la siguiente clase hasta superar esta prueba.
 
@@ -14,6 +16,9 @@ Es completamente válido hacer búsquedas en Google, cursos y tutoriales de Plat
 Recuerda que el éxito no se mide por cuánto tiempo te toma aprender, esa métrica es relativamente inútil. Mejor concéntrate en completar los cursos de tu ruta de aprendizaje profesional y desarrollar los proyectos que realmente demuestran que dominas cada tecnología.
 
 ¡Mucha suerte!
+___
+
+
 
 ## **Variables y operaciones**
 
@@ -30,15 +35,20 @@ Recuerda que el éxito no se mide por cuánto tiempo te toma aprender, esa métr
 >Declarar una variable significa reservar un espacio en la memoria para almacenar un valor y darle un nombre y un tipo de datos. Por ejemplo, en el lenguaje de programación Javascript, se declara una variable de enteros de la siguiente manera:
 >
 > _code_
->**let edad;**
->
+
+```
+let edad;
+```
 >En este caso, se está reservando un espacio en la memoria para almacenar un valor entero y se le está dando el nombre "edad".
 >
 >Por otro lado, inicializar una variable significa asignar un valor inicial a una variable previamente declarada. Por ejemplo, en el siguiente código se está inicializando la variable "edad" con el valor 25:
->
+
 > _code_
->**edad = 25;**
->
+
+```
+edad = 25;
+````
+
 >En este caso, se está asignando el valor 25 a la variable "edad" previamente declarada.
 >
 >En resumen, declarar una variable es reservar un espacio en la memoria para almacenar un valor y darle un nombre y un tipo de datos; mientras que inicializar una variable es darle un valor inicial a una variable previamente declarada. Es importante recordar que no siempre es necesario inicializar una variable, pero siempre es necesario declararla antes de usarla.
@@ -46,76 +56,118 @@ Recuerda que el éxito no se mide por cuánto tiempo te toma aprender, esa métr
 - ¿Cuál es la diferencia entre sumar números y concatenar strings?
 
 >La principal diferencia entre sumar números y concatenar strings es que la suma es una operación aritmética y la concatenación es una operación de cadenas de texto.
->
->Cuando se suman dos números, se está realizando una operación aritmética que devuelve un valor numérico. Por ejemplo, en el lenguaje de programación Java, el siguiente código suma dos números:
->
+
+>Cuando se suman dos números, se está realizando una operación aritmética que devuelve un valor numérico. Por ejemplo, en el lenguaje de programación javascript, el siguiente código suma dos números:
+
 > _code_
->**let num1 = 5;**
->**let num2 = 3;**
->**let resultado = num1 + num2;**
->
+
+```
+let num1 = 5
+let num2 = 3;
+let resultado = num1 + num2;
+```
+
 >En este caso, la variable "resultado" tendría el valor 8 (5+3).
->
->Por otro lado, cuando se concatenan dos strings, se está uniendo una cadena de texto con otra para formar una nueva cadena. Por ejemplo, en Java el siguiente código concatena dos cadenas de texto:
->
+>=
+>Por otro lado, cuando se concatenan dos strings, se está uniendo una cadena de texto con otra para formar una nueva cadena. Por ejemplo, en JavaScript el siguiente código concatena dos cadenas de texto:
+
 > _code_
->**String saludo = "Hola";**
->**String nombre = "Juan";**
->**String mensaje = saludo + " " + nombre;**
->
+
+```
+String saludo = "Hola";
+String nombre = "Juan";
+String mensaje = saludo + " " + nombre;
+```
+
 >En este caso, la variable "mensaje" tendría el valor "Hola Juan". Es importante notar que en la mayoría de los lenguajes de programación existe un operador específico para concatenar strings, en el caso de java es el operador "+" pero en otros lenguajes puede ser otro.
 
 - ¿Cuál operador me permite sumar o concatenar?
 
 >En la mayoría de los lenguajes de programación el operador "+" es utilizado tanto para sumar números como para concatenar strings. Sin embargo, el comportamiento del operador depende del tipo de datos con los que se esté trabajando.
->
+
 >Cuando se utiliza el operador "+" entre dos valores numéricos, se realiza una operación aritmética de suma. Por ejemplo, en el lenguaje de programación javascript, el siguiente código suma dos números:
->
+
 > _code_
->**let num1 = 47;**
->**let num2 = 33;**
->**let resultado = num1 + num2;**
->
+
+```
+let num1 = 47;
+let num2 = 33;
+let resultado = num1 + num2;
+```
+
 >En este caso, la variable "resultado" tendría el valor 80 (47+33).
->
+>=
+
 >Por otro lado, cuando se utiliza el operador "+" entre dos cadenas de texto, se realiza una operación de concatenación de cadenas. Por ejemplo, en javascript el siguiente código concatena dos cadenas de texto:
->
+
 > _code_
->**String saludo = "Hola";**
->**String nombre = "Juan";**
->**String mensaje = saludo + " " + nombre;**
->
+
+```
+String saludo = "Hola";
+String nombre = "Juan";
+String mensaje = saludo + " " + nombre;
+```
+
 >En este caso, la variable "mensaje" tendría el valor "Hola Juan".
->
+
 >Es importante notar que en algunos lenguajes de programación existe un operador específico para concatenar strings, como el operador + en javascript
 
 
 ### 2️⃣ Determina el nombre y tipo de dato para almacenar en variables la siguiente información:
 
 - Nombre
-    * **strings**
+    * **string**
 - Apellido
-    * **strings**
+    * **string**
 - Nombre de usuario en Platzi
-    * **strings**
+    * **string**
 - Edad
     * **numerico**      
 - Correo electrónico
-    * **strings**
+    * **string**
 - Mayor de edad
-    * **numerico**
+    * **boolean**
 - Dinero ahorrado
-    * **numerico**
+    * **number**
 - Deudas
-    * **numerico**
+    * **number**
 
 ### 3️⃣ Traduce a código JavaScript las variables del ejemplo anterior y deja tu código en los comentarios.
+
+> _code_
+
+```
+let nombre = "Edward";
+let Apelliso = "Rodriguez";
+ler username = "EJ"
+let Edad = 43;
+let mail = "ej@edward.com";
+let adult = "true";
+let saving = $100;
+let debts = $99
+```
 
 ### 4️⃣ Calcula e imprime las siguientes variables a partir de las variables del ejemplo anterior:
 
 Nombre completo (nombre y apellido)
 Dinero real (dinero ahorrado menos deudas)
-Funciones
+
+> _code_
+
+````
+let nombre = "Edward";
+let Apellido = "Rodriguez"
+let saving = 100;
+let debts = 99;
+
+let fullName = nombre +" "+ Apellido;
+let money = saving - debts;
+
+console.log( "El señor " + fullName + " tiene un monto de $"+ money);
+```
+>Este código asigna valores a las variables "nombre", "Apellido", "saving" y "debts". Luego, se concatenan los valores de "nombre" y "Apellido" para crear una nueva variable "fullName" y se calcula la diferencia entre "saving" y "debts" para crear una nueva variable "money". Finalmente, se utiliza la función "console.log()" para imprimir una cadena de texto junto con los valores de "fullName" y "money" en la consola.
+
+## Funciones
 
 ## 1️⃣ Responde las siguientes preguntas en la sección de comentarios:
 
@@ -139,18 +191,23 @@ Funciones
 >La diferencia entre parámetros y argumentos en una función radica en el momento en el que se especifican.
 >
 >Los parámetros son las variables que se especifican en la definición de una función. Son los "placeholders" o "variables de entrada" de la función, ya que indican los valores que se esperan recibir cuando se llama a la función. Por ejemplo, en la función siguiente:
->
+
 > _code_
->**function suma(a, b) {**
-    >**return a + b;**
->**}**
+```
+function suma(a, b) {
+return a + b;
+}
+```
 >
 >Los parámetros son "a" y "b".
 >
 >Los argumentos son los valores reales que se pasan a una función cuando se llama. Estos argumentos se asignan a los parámetros correspondientes en la función. Por ejemplo, en el siguiente código se está llamando a la función "suma" y pasando los argumentos 3 y 4:
 
 > _code_
->**suma(3, 4);**
+
+```
+suma(3, 4);
+```
 >
 >Los argumentos son 3 y 4.
 >
@@ -170,17 +227,22 @@ console.log("Mi nombre es " + completeName + ", pero prefiero que me digas " + n
 Condicionales
 
 > _code_
->**function nombreCompleto(name, lastname, nickname) {**
-  >**const completeName = name + lastname;**
-  >**console.log("Mi nombre es " + completeName + ", pero       prefiero que me digas " + nickname + ".");**
->**}**
+
+```
+function nombreCompleto(name, lastname, nickname) {
+const completeName = name + lastname;
+console.log("Mi nombre es " + completeName + ", per prefiero que me digas " + nickname + ".");
+}
+```
 >
 >En este código, se define una función llamada "nombreCompleto", que recibe 3 parámetros: "name", "lastname" y "nickname", que son utilizados para construir el nombre completo y el nickname, y luego se usa console.log para imprimir el mensaje en pantalla.
 >En lugar de usar variables constantes, se usan los parámetros de la función, esto permite que la función pueda ser reutilizada con diferentes valores de nombre, apellido y nickname.
 >Por ejemplo, si queremos imprimir "Mi nombre es Juan David Castro Gallego, pero prefiero que me digas juandc.":
 >
 > _code_
->**nombreCompleto("Juan David","Castro Gallego","juandc");**
+```
+nombreCompleto("Juan David","Castro Gallego","juandc");
+```
 
 ### 1️⃣ Responde las siguientes preguntas en la sección de comentarios:
 
@@ -223,36 +285,46 @@ for (let i = 0; i < 5; i++) {
     console.log("El valor de i es: " + i);
 }
 
->**let i = 0;**
->**while (i < 5) {**
->**i++;**
->**console.log("El valor de i es: " + i);**
->**}**
+> _code_
 
+```
+let i = 0;
+while (i < 5) {
+i++;
+console.log("El valor de i es: " + i);
+}
+```
 
 for (let i = 10; i >= 2; i--) {
     console.log("El valor de i es: " + i);
 }
 
->**let i = 10;**
->**while (i >= 2) {**
->**i--;**
->**console.log("El valor de i es: " + i);**
->**}**
+> _code_
 
+```
+let i = 10;
+>**while (i >= 2) {
+i--;
+console.log("El valor de i es: " + i);
+}
+```
 
 ## 3️⃣ Escribe un código en JavaScript que le pregunte a los usuarios cuánto es 2 + 2. Si responden bien, mostramos un mensaje de felicitaciones, pero si responden mal, volvemos a empezar.
 _💡 Pista: puedes usar la función prompt de JavaScript._
 
->**let respuesta = parseInt(prompt("¿Cuánto es 2 + 2?"));**
->
->**while (respuesta !== 4) {**
->    **alert("Incorrecto, vuelve a intentarlo.");**
->    **respuesta = parseInt(prompt("¿Cuánto es 2 + 2?"));**
->**}**
->
->**alert("¡Felicidades, la respuesta es correcta!");**
->
+> _code_
+
+```
+let respuesta = parseInt(prompt("¿Cuánto es 2 + 2?"));
+
+while (respuesta !== 4) {
+alert("Incorrecto, vuelve a intentarlo.");
+respuesta = parseInt(prompt("¿Cuánto es 2 + 2?"));
+}
+
+alert("¡Felicidades, la respuesta es correcta!");
+```
+
 >En este código, se utiliza el método "prompt" para pedir al usuario que ingrese un valor. Luego, se utiliza un ciclo while que se repite mientras la respuesta del usuario sea diferente a **4**, si la respuesta es correcta la condición del ciclo while no se cumple y el código continua y muestra un mensaje de felicitaciones.
 
 ## **Listas**
@@ -269,15 +341,21 @@ _💡 Pista: puedes usar la función prompt de JavaScript._
 
 ## 2️⃣ Crea una función que pueda recibir cualquier array como parámetro e imprima su primer elemento.
 
->**function imprimirPrimerElemento(arr) {**
-  >**console.log(arr[0]);**
->**}**
+> _code_
+
+```
+function imprimirPrimerElemento(arr) {
+console.log(arr[0]);
+}
+```
 >En este código se define una función llamada "imprimirPrimerElemento" que recibe un parámetro llamado "arr". La función utiliza console.log para imprimir en pantalla el primer elemento del array, el cual se accede con la notación [0], ya que los índices en los arrays empiezan en 0. Por ejemplo:
 >
 > _code_
->**let miArray = [1, 2, 3, 4, 5];**
->**imprimirPrimerElemento(miArray);**
->
+```
+let miArray = [1, 2, 3, 4, 5];
+imprimirPrimerElemento(miArray);
+```
+
 >Imprimiría el primer elemento del array que es 1.
 
 ## 3️⃣ Crea una función que pueda recibir cualquier array como parámetro e imprima todos sus elementos uno por uno (no se vale imprimir el array completo).
@@ -286,6 +364,8 @@ _💡 Pista: puedes usar la función prompt de JavaScript._
 
 
 ¿Cómo te fue? 🏆
+
+###### Lo resolvi con Platzi y chat GPT
 
 ¡Felicidades por completar la prueba de JavaScript! Confío en que hayas completado cada paso y hayas pausado para repasar los temas de los ejercicios que se te complicaron.
 
