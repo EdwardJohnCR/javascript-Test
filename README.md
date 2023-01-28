@@ -197,12 +197,11 @@ let nombre = "Edward";
 let Apellido = "Rodriguez"
 let saving = 100;
 let debts = 99;
-
 let fullName = nombre +" "+ Apellido;
 let money = saving - debts;
-
 console.log( "El señor " + fullName + " tiene un monto de $"+ money);
 ```
+
 >Este código asigna valores a las variables "nombre", "Apellido", 
 >"saving" y "debts". Luego, se concatenan los valores de "nombre" 
 >y "Apellido" para crear una nueva variable "fullName" y se calcula 
@@ -295,7 +294,9 @@ suma(3, 4);
 >para la función, mientras que los argumentos son los valores reales que se 
 >pasan a la función en el momento de la llamada.
 
-### 2️⃣ Convierte el siguiente código en una función, pero, cambiando cuando sea necesario las variables constantes por parámetros y argumentos en una función:
+### 2️⃣ Convierte el siguiente código en una función, pero, cambiando cuando 
+### sea necesario las variables constantes por parámetros y argumentos en 
+### una función:
 
 const name = "Juan David";
 const lastname = "Castro Gallego";
@@ -303,13 +304,14 @@ const completeName = name + lastname;
 const nickname = "juandc";
 
 console.log("Mi nombre es " + completeName + ", pero prefiero que me 
-digas " + nickname + ".");
+    digas " + nickname + ".");
 
 `code`
 ```
 function nombreCompleto(name, lastname, nickname) {
 const completeName = name + lastname;
-console.log("Mi nombre es " + completeName + ", per prefiero que me digas " + nickname + ".");
+    console.log("Mi nombre es " + completeName + ", per prefiero que me digas " + 
+nickname + ".");
 }
 ```
 >
@@ -389,7 +391,8 @@ nombreCompleto("Juan David","Castro Gallego","juandc");
 >eficiente.
 
 
-###  2️⃣ Replica el comportamiento del siguiente código que usa la sentencia switch utilizando if, else y else if:
+###  2️⃣ Replica el comportamiento del siguiente código que usa la sentencia 
+### switch utilizando if, else y else if:
 const tipoDeSuscripcion = "Basic";
 
 switch (tipoDeSuscripcion) {
@@ -403,7 +406,8 @@ switch (tipoDeSuscripcion) {
        console.log("Puedes tomar casi todos los cursos de Platzi durante un año");
        break;
    case "ExpertPlus":
-       console.log("Tú y alguien más pueden tomar TODOS los cursos de Platzi durante un año");
+       console.log("Tú y alguien más pueden tomar TODOS los cursos de 
+        Platzi durante un año");
        break;
 }
 
@@ -421,7 +425,8 @@ console.log("Puedes tomar casi todos los cursos de Platzi durante un mes");
 console.log("Puedes tomar casi todos los cursos de Platzi durante un año");
 
 } else if (tipoDeSuscripcion === "ExpertPlus") {
-console.log("Tú y alguien más pueden tomar TODOS los cursos de Platzi durante un año");
+console.log("Tú y alguien más pueden tomar TODOS los cursos de Platzi 
+    durante un año");
 
 } else {
 console.log("Tipo de suscripción no válida");
@@ -434,7 +439,8 @@ console.log("Tipo de suscripción no válida");
 >algunas ventajas sobre if-else if-else, ya que puede ser más fácil de leer y 
 >escribir en algunos casos.
 
-### 3️⃣ Replica el comportamiento de tu condicional anterior con if, else y else if, pero ahora solo con if (sin else ni else if).
+### 3️⃣ Replica el comportamiento de tu condicional anterior con if, else y 
+### else if, pero ahora solo con if (sin else ni else if).
 
 `code`
 ```
@@ -453,17 +459,21 @@ console.log("Puedes tomar casi todos los cursos de Platzi durante un año");
 }
 
 if (tipoDeSuscripcion === "ExpertPlus") {
-console.log("Tú y alguien más pueden tomar TODOS los cursos de Platzi durante un año");
+console.log("Tú y alguien más pueden tomar TODOS los cursos de Platzi 
+    durante un año");
 }
 
-if (tipoDeSuscripcion !== "Free" && tipoDeSuscripcion !== "Basic" && tipoDeSuscripcion !== "Expert" && tipoDeSuscripcion !== "ExpertPlus") {
+if (tipoDeSuscripcion !== "Free" && tipoDeSuscripcion !== "Basic" && 
+    tipoDeSuscripcion !== "Expert" && tipoDeSuscripcion !== "ExpertPlus") {
 console.log("Tipo de suscripción no válida");
 }
 
 }
 ```
 
-###💡 Bonus: si ya eres una experta o experto en el lenguaje, te desafío a comentar cómo replicar este comportamiento con arrays u objetos y un solo condicional. 😏
+###💡 Bonus: si ya eres una experta o experto en el lenguaje, te desafío a 
+### comentar cómo replicar este comportamiento con arrays u objetos y un solo 
+### condicional. 😏
 
 >Podrías crear un array o un objeto con la información de los diferentes 
 >tipos de suscripción, y luego utilizar un solo condicional para comparar 
@@ -474,9 +484,12 @@ console.log("Tipo de suscripción no válida");
 // Array con los tipos de suscripción
 const suscripciones = [
 {tipo: "Free", descripcion: "Solo puedes tomar los cursos gratis"},
-{tipo: "Basic", descripcion: "Puedes tomar casi todos los cursos de Platzi durante un mes"},
-{tipo: "Expert", descripcion: "Puedes tomar casi todos los cursos de Platzi durante un año"},
-{tipo: "ExpertPlus", descripcion: "Tú y alguien más pueden tomar TODOS los cursos de Platzi durante un año"}
+{tipo: "Basic", descripcion: "Puedes tomar casi todos los cursos de Platzi 
+    durante un mes"},
+{tipo: "Expert", descripcion: "Puedes tomar casi todos los cursos de Platzi 
+    durante un año"},
+{tipo: "ExpertPlus", descripcion: "Tú y alguien más pueden tomar TODOS los 
+    cursos de Platzi durante un año"}
 ];
 
 const tipoDeSuscripcion = "Basic";
@@ -507,7 +520,8 @@ ExpertPlus: "Tú y alguien más pueden tomar TODOS los cursos de Platzi durante 
 
 const tipoDeSuscripcion = "Basic";
 let descripcion = suscripciones[tipoDeSuscripcion];
-console.log(descripcion); // Puedes tomar casi todos los cursos de Platzi durante un mes
+console.log(descripcion); // Puedes tomar casi todos los cursos de 
+    Platzi durante un mes
 ```
 
 
@@ -586,7 +600,8 @@ console.log("El valor de i es: " + i);
 }
 ```
 
-## 3️⃣ Escribe un código en JavaScript que le pregunte a los usuarios cuánto es 2 + 2. Si responden bien, mostramos un mensaje de felicitaciones, pero si responden mal, volvemos a empezar.
+## 3️⃣ Escribe un código en JavaScript que le pregunte a los usuarios cuánto es 
+### 2 + 2. Si responden bien, mostramos un mensaje de felicitaciones, pero si responden mal, volvemos a empezar.
 _💡 Pista: puedes usar la función prompt de JavaScript._
 
 `code`
@@ -639,6 +654,7 @@ Ejemplo: var miArray = [1, 2, 3, 4, 5];
 >Un ejemplo de objeto en JavaScript podría ser:
 
 `code`
+```
 const persona = {
     nombre: "Juan",
     edad: 30,
@@ -689,7 +705,7 @@ let persona = {
 >y "hobbies". La propiedad "hobbies" es un array de strings.
 
 
-## 2️⃣ Crea una función que pueda recibir cualquier array como parámetro e imprima su primer elemento.
+### 2️⃣ Crea una función que pueda recibir cualquier array como parámetro e imprima su primer elemento.
 
  `code`
 ```
@@ -712,9 +728,34 @@ imprimirPrimerElemento(miArray);
 
 >Imprimiría el primer elemento del array que es 1.
 
-## 3️⃣ Crea una función que pueda recibir cualquier array como parámetro e imprima todos sus elementos uno por uno (no se vale imprimir el array completo).
+### 3️⃣ Crea una función que pueda recibir cualquier array como parámetro e 
+### imprima todos sus elementos uno por uno (no se vale imprimir el array completo).
 
-## 4️⃣ Crea una función que pueda recibir cualquier objeto como parámetro e imprima todos sus elementos uno por uno (no se vale imprimir el objeto completo).
+>Ejemplo de una función que recibe un array como parámetro e imprime todos sus elementos uno por uno:
+
+`code`
+```
+function imprimirElementos(arr) {
+  for (let i = 0; i < arr.length; i++) {
+    console.log(arr[i]);
+  }
+}
+
+let miArray = [1, 2, 3, 4, 5];
+imprimirElementos(miArray);
+```
+
+>En esta función se usa un bucle "for" para recorrer cada elemento del array y se usa el método "console.log()" para imprimir cada elemento uno por uno.
+>
+>En resumen, la función recibe un array como parámetro, luego recorre todo el array con un bucle for, y en cada iteración, imprime el elemento actual. El nombre del array es "arr" pero puedes usar cualquier nombre.
+
+
+
+### 4️⃣ Crea una función que pueda recibir cualquier objeto como parámetro e 
+imprima todos sus elementos uno por uno (no se vale imprimir el objeto completo).
+
+
+
 
 
 ¿Cómo te fue? 🏆
