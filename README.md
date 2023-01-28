@@ -60,12 +60,10 @@ let edad;
 >siguiente código se está inicializando la variable "edad" con el 
 >valor 25:
 
-
  `code`
 ```
 edad = 25;
 ````
-
 >En este caso, se está asignando el valor 25 a la variable "edad" previamente declarada.
 >
 >En resumen, declarar una variable es reservar un espacio en la
@@ -192,6 +190,7 @@ Nombre completo (nombre y apellido)
 Dinero real (dinero ahorrado menos deudas)
 
  `code`
+
 ````
 let nombre = "Edward";
 let Apellido = "Rodriguez"
@@ -201,6 +200,7 @@ let fullName = nombre +" "+ Apellido;
 let money = saving - debts;
 console.log( "El señor " + fullName + " tiene un monto de $"+ money);
 ```
+
 
 >Este código asigna valores a las variables "nombre", "Apellido", 
 >"saving" y "debts". Luego, se concatenan los valores de "nombre" 
@@ -294,9 +294,7 @@ suma(3, 4);
 >para la función, mientras que los argumentos son los valores reales que se 
 >pasan a la función en el momento de la llamada.
 
-### 2️⃣ Convierte el siguiente código en una función, pero, cambiando cuando 
-### sea necesario las variables constantes por parámetros y argumentos en 
-### una función:
+### 2️⃣ Convierte el siguiente código en una función, pero, cambiando cuando  sea necesario las variables constantes por parámetros y argumentos en una función:
 
 const name = "Juan David";
 const lastname = "Castro Gallego";
@@ -392,7 +390,7 @@ nombreCompleto("Juan David","Castro Gallego","juandc");
 
 
 ###  2️⃣ Replica el comportamiento del siguiente código que usa la sentencia 
-### switch utilizando if, else y else if:
+ switch utilizando if, else y else if:
 const tipoDeSuscripcion = "Basic";
 
 switch (tipoDeSuscripcion) {
@@ -439,8 +437,7 @@ console.log("Tipo de suscripción no válida");
 >algunas ventajas sobre if-else if-else, ya que puede ser más fácil de leer y 
 >escribir en algunos casos.
 
-### 3️⃣ Replica el comportamiento de tu condicional anterior con if, else y 
-### else if, pero ahora solo con if (sin else ni else if).
+### 3️⃣ Replica el comportamiento de tu condicional anterior con if, else y else if, pero ahora solo con if (sin else ni else if).
 
 `code`
 ```
@@ -472,8 +469,7 @@ console.log("Tipo de suscripción no válida");
 ```
 
 ###💡 Bonus: si ya eres una experta o experto en el lenguaje, te desafío a 
-### comentar cómo replicar este comportamiento con arrays u objetos y un solo 
-### condicional. 😏
+### comentar cómo replicar este comportamiento con arrays u objetos y un solo condicional. 😏
 
 >Podrías crear un array o un objeto con la información de los diferentes 
 >tipos de suscripción, y luego utilizar un solo condicional para comparar 
@@ -572,7 +568,7 @@ console.log(descripcion); // Puedes tomar casi todos los cursos de
 >condicional dentro de un ciclo, dependiendo de la lógica que se quiera implementar 
 >en el código.
 
-## 2️⃣ Replica el comportamiento de los siguientes ciclos for utilizando ciclos while:
+### 2️⃣ Replica el comportamiento de los siguientes ciclos for utilizando ciclos while:
 
 for (let i = 0; i < 5; i++) {
     console.log("El valor de i es: " + i);
@@ -600,8 +596,7 @@ console.log("El valor de i es: " + i);
 }
 ```
 
-## 3️⃣ Escribe un código en JavaScript que le pregunte a los usuarios cuánto es 
-### 2 + 2. Si responden bien, mostramos un mensaje de felicitaciones, pero si responden mal, volvemos a empezar.
+### 3️⃣ Escribe un código en JavaScript que le pregunte a los usuarios cuánto es 2 + 2. Si responden bien, mostramos un mensaje de felicitaciones, pero si responden mal, volvemos a empezar.
 _💡 Pista: puedes usar la función prompt de JavaScript._
 
 `code`
