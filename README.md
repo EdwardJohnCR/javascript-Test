@@ -190,8 +190,7 @@ Nombre completo (nombre y apellido)
 Dinero real (dinero ahorrado menos deudas)
 
  `code`
-
-````
+```
 let nombre = "Edward";
 let Apellido = "Rodriguez"
 let saving = 100;
@@ -200,7 +199,6 @@ let fullName = nombre +" "+ Apellido;
 let money = saving - debts;
 console.log( "El señor " + fullName + " tiene un monto de $"+ money);
 ```
-
 
 >Este código asigna valores a las variables "nombre", "Apellido", 
 >"saving" y "debts". Luego, se concatenan los valores de "nombre" 
