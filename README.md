@@ -280,8 +280,9 @@ nombreCompleto("Juan David","Castro Gallego","juandc");
 >En resumen, los condicionales y las funciones son herramientas muy poderosas de programación que se complementan entre sí y se pueden utilizar juntos para controlar el flujo de ejecución del código y organizar el código de manera eficiente.
 
 
-###  2️⃣ Replica el comportamiento del siguiente código que usa la sentencia 
- switch utilizando if, else y else if:
+###  2️⃣ Replica el comportamiento del siguiente código que usa la sentencia switch utilizando if, else y else if:
+
+```
 const tipoDeSuscripcion = "Basic";
 
 switch (tipoDeSuscripcion) {
@@ -299,8 +300,11 @@ switch (tipoDeSuscripcion) {
         Platzi durante un año");
        break;
 }
+```
+___
 
  `code`
+
 ```
 const tipoDeSuscripcion = "Basic";
 
@@ -434,6 +438,7 @@ console.log(descripcion); // Puedes tomar casi todos los cursos de
 >Sí, es posible mezclar ciclos y condicionales en JavaScript. Por ejemplo, se puede utilizar un ciclo para iterar sobre un conjunto de datos y dentro del ciclo, se pueden utilizar condicionales para tomar decisiones en base al valor actual de la iteración. También es posible utilizar un ciclo dentro de un condicional o un condicional dentro de un ciclo, dependiendo de la lógica que se quiera implementar en el código.
 
 ### 2️⃣ Replica el comportamiento de los siguientes ciclos for utilizando ciclos while:
+
 
 for (let i = 0; i < 5; i++) {
     console.log("El valor de i es: " + i);
@@ -596,7 +601,7 @@ imprimirElementos(miObjeto);
 ```
 
 >En esta función se usa un bucle "for in" para recorrer cada elemento del objeto y se usa el método "console.log()" para imprimir cada elemento uno por uno. en cada iteración se imprime la key y el valor asociado a ella.
-
+>
 >En resumen, la función recibe un objeto como parámetro, luego recorre todo el objeto con un bucle for in, y en cada iteración, imprime la key y el valor asociado. El nombre del objeto es "obj" pero puedes usar cualquier nombre.
 
 
