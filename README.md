@@ -66,23 +66,13 @@ edad = 25;
 ````
 >En este caso, se está asignando el valor 25 a la variable "edad" previamente declarada.
 >
->En resumen, declarar una variable es reservar un espacio en la
->memoria para almacenar un valor y darle un nombre y un tipo de 
->datos; mientras que inicializar una variable es darle un valor 
->inicial a una variable previamente declarada. Es importante 
->recordar que no siempre es necesario inicializar una variable, 
->pero siempre es necesario declararla antes de usarla.
+>En resumen, declarar una variable es reservar un espacio en lamemoria para almacenar un valor y darle un nombre y un tipo de datos; mientras que inicializar una variable es darle un valor inicial a una variable previamente declarada. Es importante ecordar que no siempre es necesario inicializar una variable, pero siempre es necesario declararla antes de usarla.
 
 - ¿Cuál es la diferencia entre sumar números y concatenar strings?
 
->La principal diferencia entre sumar números y concatenar strings 
->es que la suma es una operación aritmética y la concatenación es 
->una operación de cadenas de texto.
+>La principal diferencia entre sumar números y concatenar strings es que la suma es una operación aritmética y la concatenación es una operación de cadenas de texto.
 >
->Cuando se suman dos números, se está realizando una operación 
->aritmética que devuelve un valor numérico. Por ejemplo, en el 
->lenguaje de programación javascript, el siguiente código suma 
->dos números:
+>Cuando se suman dos números, se está realizando una operación aritmética que devuelve un valor numérico. Por ejemplo, en el lenguaje de programación javascript, el siguiente código suma dos números:
 
  `code`
 ```
@@ -326,7 +316,7 @@ nickname + ".");
 nombreCompleto("Juan David","Castro Gallego","juandc");
 
 ```
-##Condicionales
+## Condicionales
 
 ### 1️⃣ Responde las siguientes preguntas en la sección de comentarios:
 
@@ -466,8 +456,7 @@ console.log("Tipo de suscripción no válida");
 }
 ```
 
-###💡 Bonus: si ya eres una experta o experto en el lenguaje, te desafío a 
-### comentar cómo replicar este comportamiento con arrays u objetos y un solo condicional. 😏
+### 💡 Bonus: si ya eres una experta o experto en el lenguaje, te desafío a comentar cómo replicar este comportamiento con arrays u objetos y un solo condicional. 😏
 
 >Podrías crear un array o un objeto con la información de los diferentes 
 >tipos de suscripción, y luego utilizar un solo condicional para comparar 
@@ -548,13 +537,7 @@ console.log(descripcion); // Puedes tomar casi todos los cursos de
 
 - ¿Qué es un ciclo infinito y por qué es un problema?
 
->Un ciclo infinito es un ciclo que no tiene una condición de finalización o que 
->tiene una condición de finalización que nunca se cumple. Esto puede causar problemas 
->en el código ya que el ciclo continuará ejecutándose indefinidamente y puede consumir 
->recursos del sistema, causar bloqueos o colisiones en el código, y eventualmente 
->causar un crash del programa. Es importante asegurarse de que todos los ciclos 
->tengan una condición de finalización válida y sean utilizados de manera apropiada 
->en el código.
+>Un ciclo infinito es un ciclo que no tiene una condición de finalización o que tiene una condición de finalización que nunca se cumple. Esto puede causar problemas en el código ya que el ciclo continuará ejecutándose indefinidamente y puede consumir recursos del sistema, causar bloqueos o colisiones en el código, y eventualmente causar un crash del programa. Es importante asegurarse de que todos los ciclos tengan una condición de finalización válida y sean utilizados de manera apropiada en el código.
 
 
 - ¿Puedo mezclar ciclos y condicionales?
