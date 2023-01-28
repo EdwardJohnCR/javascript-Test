@@ -455,7 +455,7 @@ for (let i = 10; i >= 2; i--) {
 `code`
 ```
 let i = 10;
->**while (i >= 2) {
+while (i >= 2) {
 i--;
 console.log("El valor de i es: " + i);
 }
@@ -467,12 +467,10 @@ _💡 Pista: puedes usar la función prompt de JavaScript._
 `code`
 ```
 let respuesta = parseInt(prompt("¿Cuánto es 2 + 2?"));
-
 while (respuesta !== 4) {
 alert("Incorrecto, vuelve a intentarlo.");
 respuesta = parseInt(prompt("¿Cuánto es 2 + 2?"));
 }
-
 alert("¡Felicidades, la respuesta es correcta!");
 ```
 
