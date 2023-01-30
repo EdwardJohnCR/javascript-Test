@@ -43,10 +43,10 @@ let edad;
 >
 >Por otro lado, inicializar una variable significa asignar un valor inicial a una variable previamente declarada. Por ejemplo, en el siguiente código se está inicializando la variable "edad" con el valor 25:
 
- `code`
+`code`
 ```
 edad = 25;
-````
+```
 >En este caso, se está asignando el valor 25 a la variable "edad" previamente declarada.
 >
 >En resumen, declarar una variable es reservar un espacio en lamemoria para almacenar un valor y darle un nombre y un tipo de datos; mientras que inicializar una variable es darle un valor inicial a una variable previamente declarada. Es importante ecordar que no siempre es necesario inicializar una variable, pero siempre es necesario declararla antes de usarla.
@@ -215,7 +215,7 @@ suma(3, 4);
 >
 >En resumen, los parámetros son los "placeholders"
 
-> _NOTA_
+_NOTA_
 >"Placeholder" es un término en inglés que se refiere a un lugar reservado en un texto o código donde se espera que se inserten valores específicos en el futuro. En el contexto de programación, los parámetros de una función son placeholders o lugares reservados para recibir valores específicos (argumentos) cuando se llama a la función. Los parámetros son variables declaradas en la definición de una función y se utilizan como "entradas" para la función, mientras que los argumentos son los valores reales que se pasan a la función en el momento de la llamada.
 
 ### 2️⃣ Convierte el siguiente código en una función, pero, cambiando cuando  sea necesario las variables constantes por parámetros y argumentos en una función:
@@ -225,8 +225,7 @@ const lastname = "Castro Gallego";
 const completeName = name + lastname;
 const nickname = "juandc";
 
-console.log("Mi nombre es " + completeName + ", pero prefiero que me 
-    digas " + nickname + ".");
+console.log("Mi nombre es " + completeName + ", pero prefiero que me digas " + nickname + ".");
 
 `code`
 ```
@@ -236,7 +235,7 @@ const completeName = name + lastname;
 nickname + ".");
 }
 ```
->
+
 >En este código, se define una función llamada "nombreCompleto", que recibe 3 parámetros: "name", "lastname" y "nickname", que son utilizados para construir el nombre completo y el nickname, y luego se usa console.log para imprimir el mensaje en pantalla.En lugar de usar variables constantes, se usan los parámetros de la función, esto permite que la función pueda ser reutilizada con diferentes valores de nombre, apellido y nickname.
 >Por ejemplo, si queremos imprimir "Mi nombre es Juan David Castro Gallego, pero prefiero que me digas juandc.":
 
@@ -303,8 +302,7 @@ switch (tipoDeSuscripcion) {
 ```
 ___
 
- `code`
-
+`code`
 ```
 const tipoDeSuscripcion = "Basic";
 
@@ -335,36 +333,39 @@ console.log("Tipo de suscripción no válida");
 const tipoDeSuscripcion = "Basic";
 
 if (tipoDeSuscripcion === "Free") {
-console.log("Solo puedes tomar los cursos gratis");
+    console.log("Solo puedes tomar los cursos gratis");
+    return;
 }
 
 if (tipoDeSuscripcion === "Basic") {
-console.log("Puedes tomar casi todos los cursos de Platzi durante un mes");
+    console.log("Puedes tomar casi todos los cursos de Platzi durante un mes");
+    return;
 }
 
 if (tipoDeSuscripcion === "Expert") {
-console.log("Puedes tomar casi todos los cursos de Platzi durante un año");
+    console.log("Puedes tomar casi todos los cursos de Platzi durante un año");
+    return;
 }
 
 if (tipoDeSuscripcion === "ExpertPlus") {
-console.log("Tú y alguien más pueden tomar TODOS los cursos de Platzi 
-    durante un año");
+    console.log("Tú y alguien más pueden tomar TODOS los cursos de Platzi durante un año");
+    return;
 }
 
-if (tipoDeSuscripcion !== "Free" && tipoDeSuscripcion !== "Basic" && 
-    tipoDeSuscripcion !== "Expert" && tipoDeSuscripcion !== "ExpertPlus") {
-console.log("Tipo de suscripción no válida");
-}
-
+if (tipoDeSuscripcion !== "Free" && tipoDeSuscripcion !== "Basic" && tipoDeSuscripcion !== "Expert" && tipoDeSuscripcion !== "ExpertPlus") {
+    console.log("Tipo de suscripción no válida");
+    return;
 }
 ```
 
+___
 ### 💡 Bonus: si ya eres una experta o experto en el lenguaje, te desafío a comentar cómo replicar este comportamiento con arrays u objetos y un solo condicional. 😏
 
 >Podrías crear un array o un objeto con la información de los diferentes tipos de suscripción, y luego utilizar un solo condicional para comparar el tipo de suscripción que tiene el usuario con las opciones del array o objeto. Por ejemplo:
 
 ```
 // Array con los tipos de suscripción
+
 const suscripciones = [
 {tipo: "Free", descripcion: "Solo puedes tomar los cursos gratis"},
 {tipo: "Basic", descripcion: "Puedes tomar casi todos los cursos de Platzi 
@@ -403,13 +404,28 @@ ExpertPlus: "Tú y alguien más pueden tomar TODOS los cursos de Platzi durante 
 
 const tipoDeSuscripcion = "Basic";
 let descripcion = suscripciones[tipoDeSuscripcion];
-console.log(descripcion); // Puedes tomar casi todos los cursos de 
-    Platzi durante un mes
+console.log(descripcion); // Puedes tomar casi todos los cursos de Platzi durante un mes
 ```
 
+>Se puede replicar este comportamiento utilizando un objeto con claves que representen los diferentes tipos de suscripción y valores que representen los mensajes a imprimir:
 
+`code`
+```
+const tipoDeSuscripcion = "Basic";
 
+const suscripciones = {
+  Free: "Solo puedes tomar los cursos gratis",
+  Basic: "Puedes tomar casi todos los cursos de Platzi durante un mes",
+  Expert: "Puedes tomar casi todos los cursos de Platzi durante un año",
+  ExpertPlus: "Tú y alguien más pueden tomar TODOS los cursos de Platzi durante un año",
+};
 
+console.log(suscripciones[tipoDeSuscripcion] || "Tipo de suscripción no válida");
+```
+
+>Con esto, se evita tener que utilizar varias condicionales para determinar qué mensaje imprimir. En su lugar, se puede acceder directamente al valor correspondiente en el objeto. Si la clave no existe en el objeto, el resultado será undefined, por lo que se puede utilizar el operador || para imprimir un mensaje de "Tipo de suscripción no válida".
+
+___
 
 ## **Ciclos**
 
@@ -420,22 +436,135 @@ console.log(descripcion); // Puedes tomar casi todos los cursos de
 >Un ciclo es una estructura de control de un programa que permite repetir un bloque de código una o varias veces, dependiendo de una condición dada. 
 >Los ciclos son también conocidos como bucles o loops. Los ciclos se utilizan para automatizar tareas repetitivas, para recorrer elementos de una colección, etc. Los lenguajes de programación suelen tener varios tipos de ciclos, como los ciclos for, while, do-while, entre otros.
 
+### EJEMPLOS
+___
+
+- Ciclo "for":
+
+`code`
+```
+for (let i = 1; i <= 10; i++) {
+    console.log(i);
+}
+```
+
+>Este ciclo imprimirá los números del 1 al 10 en la consola. La inicialización de la variable "i" se realiza dentro de los paréntesis del ciclo "for", y se establece en 1. La condición en el ciclo "for" es "i <= 10", lo que significa que el ciclo continuará hasta que "i" sea mayor que 10. Finalmente, la expresión de incremento "i++" se ejecuta después de cada iteración del ciclo y aumenta el valor de "i" en 1.
+
+- Ciclo "while" en JavaScript:
+
+
+`code`
+```
+let i = 1;
+
+while (i <= 10) {
+    console.log(i);
+    i++;
+}
+```
+
+>Este ciclo imprimirá los números del 1 al 10 en la consola. La variable "i" se inicializa en 1 antes del ciclo. La condición en el ciclo "while" es "i <= 10", lo que significa que el ciclo continuará hasta que "i" sea mayor que 10. La expresión de incremento "i++" se encuentra dentro del cuerpo del ciclo y se ejecuta después de cada iteración, aumentando el valor de "i" en 1. Una vez que "i" es 11, la condición se vuelve falsa y el ciclo termina.
+
+Aquí hay un ejemplo de un ciclo "do-while" en JavaScript:
+
+`code`
+```
+let i = 1;
+
+do {
+    console.log(i);
+    i++;
+} while (i <= 10);
+```
+
+>Este ciclo imprimirá los números del 1 al 10 en la consola. La variable "i" se inicializa en 1 y se incrementa en cada iteración del ciclo. La condición en el ciclo "while" es "i <= 10", lo que significa que el ciclo continuará hasta que "i" sea mayor que 10. Una vez que "i" es 11, la condición se vuelve falsa y el ciclo termina.
+
+___
+
 
 - ¿Qué tipos de ciclos existen en JavaScript?
 
 >Existen dos tipos de ciclos en JavaScript: los ciclos for y los ciclos while. 
 >El ciclo for se utiliza para repetir un bloque de código un número determinado de veces, mientras que el ciclo while se utiliza para repetir un bloque de código mientras se cumpla una condición.
+>
 >También existe un tercer ciclo en javascript llamado for-in el cual se utiliza para iterar sobre las propiedades de un objeto.
 
+ciclo "for-in" en JavaScript:
+
+`code`
+```
+const person = {
+    name: "John",
+    age: 30,
+    city: "New York"
+};
+
+for (const key in person) {
+    console.log(`${key}: ${person[key]}`);
+}
+```
+
+>Este ciclo recorre las propiedades de un objeto "person". La palabra clave "in" se utiliza para iterar sobre las propiedades de un objeto. Cada iteración del ciclo asigna el nombre de la propiedad actual a la variable "key". Luego, se puede acceder al valor de la propiedad utilizando la notación de corchetes "person[key]".
+
+El ciclo imprimirá en la consola:
+
+`code`
+```
+name: John
+age: 30
+city: New York
+```
 
 - ¿Qué es un ciclo infinito y por qué es un problema?
 
 >Un ciclo infinito es un ciclo que no tiene una condición de finalización o que tiene una condición de finalización que nunca se cumple. Esto puede causar problemas en el código ya que el ciclo continuará ejecutándose indefinidamente y puede consumir recursos del sistema, causar bloqueos o colisiones en el código, y eventualmente causar un crash del programa. Es importante asegurarse de que todos los ciclos tengan una condición de finalización válida y sean utilizados de manera apropiada en el código.
 
+Ejemplo ciclo infinito:
+
+`code`
+```
+while (true) {
+    console.log("Este ciclo nunca termina");
+}
+```
+
+>Este ciclo utiliza la condición constante true, lo que significa que siempre se evaluará como verdadera y, por lo tanto, el ciclo nunca terminará. Por lo general, se utiliza una condición de ciclo que eventualmente se vuelva falsa para evitar ciclos infinitos y asegurarse de que el programa termine de manera controlada. Sin embargo, en algunos casos, puede ser útil crear un ciclo infinito para ejecutar un proceso en segundo plano hasta que se detenga manualmente.
+
 
 - ¿Puedo mezclar ciclos y condicionales?
 
 >Sí, es posible mezclar ciclos y condicionales en JavaScript. Por ejemplo, se puede utilizar un ciclo para iterar sobre un conjunto de datos y dentro del ciclo, se pueden utilizar condicionales para tomar decisiones en base al valor actual de la iteración. También es posible utilizar un ciclo dentro de un condicional o un condicional dentro de un ciclo, dependiendo de la lógica que se quiera implementar en el código.
+
+>ejemplo de cómo mezclar ciclos y condicionales en JavaScript:
+
+`code`
+```
+for (let i = 1; i <= 10; i++) {
+    if (i % 2 === 0) {
+        console.log(`${i} es un número par`);
+    } else {
+        console.log(`${i} es un número impar`);
+    }
+}
+```
+
+>Este código utiliza un ciclo "for" para iterar sobre los números del 1 al 10. Dentro del cuerpo del ciclo, se usa una estructura de control "if-else" para verificar si el número actual es par o impar. Si el número es par, se imprime un mensaje que indica que es un número par. De lo contrario, se imprime un mensaje que indica que es un número impar.
+>
+>El código imprimirá en la consola:
+
+`code`
+```
+1 es un número impar
+2 es un número par
+3 es un número impar
+4 es un número par
+5 es un número impar
+6 es un número par
+7 es un número impar
+8 es un número par
+9 es un número impar
+10 es un número par
+```
 
 ### 2️⃣ Replica el comportamiento de los siguientes ciclos for utilizando ciclos while:
 
@@ -499,7 +628,7 @@ Ejemplo: var miArray = [1, 2, 3, 4, 5];
 >Un objeto en JavaScript es una estructura de datos que permite almacenar valores y propiedades asociadas a una determinada clave. Los objetos son similares a los arrays, pero en lugar de almacenar valores en posiciones específicas, los almacenan en propiedades, que son pares clave-valor. 
 >Los objetos se crean utilizando la notación {} y se pueden acceder a sus propiedades mediante la notación de punto (.) o la notación de corchetes ([]). Los objetos son muy versátiles y se utilizan en muchos aspectos de la programación en JavaScript, como en la manipulación de datos, la creación de objetos personalizados y la programación orientada a objetos.
 >
->Un ejemplo de objeto en JavaScript podría ser:
+>Un ejemplo de objeto podría ser:
 
 `code`
 ```
@@ -523,8 +652,7 @@ const persona = {
 - ¿Puedo mezclar arrays con objetos o incluso objetos con arrays?
 
 >Sí, es posible mezclar arrays con objetos o incluso objetos con arrays en JavaScript. 
->Un ejemplo podría ser tener un array de objetos, donde cada objeto contiene información de una persona, como su nombre, edad y dirección. También es posible tener un objeto con una propiedad que sea un array, como un objeto "usuario" que tiene una propiedad "historial" que es un array de objetos "actividad". 
-Esto dependerá del uso que le quieras dar a los datos y cómo los quieras almacenar y manejar.
+>Un ejemplo podría ser tener un array de objetos, donde cada objeto contiene información de una persona, como su nombre, edad y dirección. También es posible tener un objeto con una propiedad que sea un array, como un objeto "usuario" que tiene una propiedad "historial" que es un array de objetos "actividad". Esto dependerá del uso que le quieras dar a los datos y cómo los quieras almacenar y manejar.
 >Los objetos pueden contener arrays como propiedades, y los arrays pueden contener objetos como elementos. Esto se conoce como estructuras de datos anidadas. Sin embargo, es importante considerar la legibilidad y el mantenimiento del código al utilizar estructuras de datos anidadas.
 >
 >Ejemplo:
@@ -550,19 +678,24 @@ console.log(arr[0]);
 ```
 >En este código se define una función llamada "imprimirPrimerElemento" que recibe un parámetro llamado "arr". La función utiliza console.log para imprimir en pantalla el primer elemento del array, el cual se accede con la notación [0], ya que los índices en los arrays empiezan en 0. 
 >Por ejemplo:
->
 
 `code`
 ```
-let miArray = [1, 2, 3, 4, 5];
-imprimirPrimerElemento(miArray);
+const numbers = [1, 2, 3, 4, 5];
+printFirstElement(numbers); // Imprimirá "1" en la consola.
 ```
+>Imprimiría el primer elemento del array que es *1*.
 
->Imprimiría el primer elemento del array que es 1.
+```
+const names = ["John", "Jane", "Jim"];
+printFirstElement(names); // Imprimirá "John" en la consola.
+```
+>Imprimiría el primer elemento del array que es *John*.
+
 
 ### 3️⃣ Crea una función que pueda recibir cualquier array como parámetro e imprima todos sus elementos uno por uno (no se vale imprimir el array completo).
 
->Ejemplo de una función que recibe un array como parámetro e imprime todos sus elementos uno por uno:
+>Ejemplo 
 
 `code`
 ```
@@ -582,10 +715,9 @@ imprimirElementos(miArray);
 
 
 
-### 4️⃣ Crea una función que pueda recibir cualquier objeto como parámetro e 
-imprima todos sus elementos uno por uno (no se vale imprimir el objeto completo).
+### 4️⃣ Crea una función que pueda recibir cualquier objeto como parámetro e imprima todos sus elementos uno por uno (no se vale imprimir el objeto completo).
 
->Ejemplo de una función que recibe un objeto como parámetro e imprime todos sus elementos uno por uno:
+>Ejemplo 
 
 
 `code`
@@ -605,8 +737,17 @@ imprimirElementos(miObjeto);
 >En resumen, la función recibe un objeto como parámetro, luego recorre todo el objeto con un bucle for in, y en cada iteración, imprime la key y el valor asociado. El nombre del objeto es "obj" pero puedes usar cualquier nombre.
 
 
+`code`
+```
+function printElemetforElementObject(obj) {
+    const arr = Object.values(obj);
+    for (let i = 0; i <arr.length; i++) {
+        console.log(arr[i])
+    }
+}
+```
 
-
+___
 
 ¿Cómo te fue? 🏆
 
