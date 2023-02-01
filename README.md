@@ -35,7 +35,7 @@ ___
 >Declarar una variable significa reservar un espacio en la memoria para almacenar un valor y darle un nombre y un tipo de datos. Por ejemplo, en el lenguaje de programación Javascript, se declara una variable de enteros de la siguiente manera:
 
  `code`
-```
+```js
 let edad;
 ```
 >En este caso, se está reservando un espacio en la memoria para 
@@ -44,7 +44,7 @@ let edad;
 >Por otro lado, inicializar una variable significa asignar un valor inicial a una variable previamente declarada. Por ejemplo, en el siguiente código se está inicializando la variable "edad" con el valor 25:
 
 `code`
-```
+```js
 edad = 25;
 ```
 >En este caso, se está asignando el valor 25 a la variable "edad" previamente declarada.
@@ -58,7 +58,7 @@ edad = 25;
 >Cuando se suman dos números, se está realizando una operación aritmética que devuelve un valor numérico. Por ejemplo, en el lenguaje de programación javascript, el siguiente código suma dos números:
 
  `code`
-```
+```js
 let num1 = 5
 let num2 = 3;
 let resultado = num1 + num2;
@@ -70,7 +70,7 @@ let resultado = num1 + num2;
 >Por ejemplo, en JavaScript el siguiente código concatena dos cadenas de texto:
 
  `code`
-```
+```js
 String saludo = "Hola";
 String nombre = "Juan";
 String mensaje = saludo + " " + nombre;
@@ -87,7 +87,7 @@ String mensaje = saludo + " " + nombre;
 >Cuando se utiliza el operador "+" entre dos valores numéricos, se realiza una operación aritmética de suma. Por ejemplo, en el lenguaje de programación javascript, el siguiente código suma dos números:
 
  `code`
-```
+```js
 let num1 = 47;
 let num2 = 33;
 let resultado = num1 + num2;
@@ -100,7 +100,7 @@ let resultado = num1 + num2;
 >Por ejemplo, en javascript el siguiente código concatena dos cadenas de texto:
 
  `code`
-```
+```js
 String saludo = "Hola";
 String nombre = "Juan";
 String mensaje = saludo + " " + nombre;
@@ -133,7 +133,7 @@ String mensaje = saludo + " " + nombre;
 ### 3️⃣ Traduce a código JavaScript las variables del ejemplo anterior y deja tu código en los comentarios.
 
  `code`
-```
+```js
 let nombre = "Edward";
 let Apelliso = "Rodriguez";
 ler username = "EJ"
@@ -150,7 +150,7 @@ Nombre completo (nombre y apellido)
 Dinero real (dinero ahorrado menos deudas)
 
  `code`
-```
+```js
 let nombre = "Edward";
 let Apellido = "Rodriguez"
 let saving = 100;
@@ -196,7 +196,7 @@ console.log( "El señor " + fullName + " tiene un monto de $"+ money);
 >Los parámetros son las variables que se especifican en la definición de una función. Son los "placeholders" o "variables de entrada" de la función, ya que indican los valores que se esperan recibir cuando se llama a la función. Por ejemplo, en la función siguiente:
 
  `code`
-```
+```js
 function suma(a, b) {
 return a + b;
 }
@@ -207,7 +207,7 @@ return a + b;
 >Los argumentos son los valores reales que se pasan a una función cuando se llama. Estos argumentos se asignan a los parámetros correspondientes en la función. Por ejemplo, en el siguiente código se está llamando a la función "suma" y pasando los argumentos 3 y 4:
 
  `code`
-```
+```js
 suma(3, 4);
 ```
 
@@ -228,7 +228,7 @@ const nickname = "juandc";
 console.log("Mi nombre es " + completeName + ", pero prefiero que me digas " + nickname + ".");
 
 `code`
-```
+```js
 function nombreCompleto(name, lastname, nickname) {
 const completeName = name + lastname;
     console.log("Mi nombre es " + completeName + ", per prefiero que me digas " + 
@@ -240,7 +240,7 @@ nickname + ".");
 >Por ejemplo, si queremos imprimir "Mi nombre es Juan David Castro Gallego, pero prefiero que me digas juandc.":
 
 `code`
-```
+```js
 nombreCompleto("Juan David","Castro Gallego","juandc");
 
 ```
@@ -281,7 +281,7 @@ nombreCompleto("Juan David","Castro Gallego","juandc");
 
 ###  2️⃣ Replica el comportamiento del siguiente código que usa la sentencia switch utilizando if, else y else if:
 
-```
+```js
 const tipoDeSuscripcion = "Basic";
 
 switch (tipoDeSuscripcion) {
@@ -303,7 +303,7 @@ switch (tipoDeSuscripcion) {
 ___
 
 `code`
-```
+```js
 const tipoDeSuscripcion = "Basic";
 
 if (tipoDeSuscripcion === "Free") {
@@ -329,7 +329,7 @@ console.log("Tipo de suscripción no válida");
 ### 3️⃣ Replica el comportamiento de tu condicional anterior con if, else y else if, pero ahora solo con if (sin else ni else if).
 
 `code`
-```
+```js
 const tipoDeSuscripcion = "Basic";
 
 if (tipoDeSuscripcion === "Free") {
@@ -363,7 +363,7 @@ ___
 
 >Podrías crear un array o un objeto con la información de los diferentes tipos de suscripción, y luego utilizar un solo condicional para comparar el tipo de suscripción que tiene el usuario con las opciones del array o objeto. Por ejemplo:
 
-```
+```js
 // Array con los tipos de suscripción
 
 const suscripciones = [
@@ -394,7 +394,7 @@ console.log(descripcion); // Puedes tomar casi todos los cursos de Platzi durant
 >suscripciones en lugar de un array
 
 `code`
-```
+```js
 const suscripciones = {
 Free: "Solo puedes tomar los cursos gratis",
 Basic: "Puedes tomar casi todos los cursos de Platzi durante un mes",
@@ -410,7 +410,7 @@ console.log(descripcion); // Puedes tomar casi todos los cursos de Platzi durant
 >Se puede replicar este comportamiento utilizando un objeto con claves que representen los diferentes tipos de suscripción y valores que representen los mensajes a imprimir:
 
 `code`
-```
+```js
 const tipoDeSuscripcion = "Basic";
 
 const suscripciones = {
@@ -442,7 +442,7 @@ ___
 - Ciclo "for":
 
 `code`
-```
+```js
 for (let i = 1; i <= 10; i++) {
     console.log(i);
 }
@@ -454,7 +454,7 @@ for (let i = 1; i <= 10; i++) {
 
 
 `code`
-```
+```js
 let i = 1;
 
 while (i <= 10) {
@@ -468,7 +468,7 @@ while (i <= 10) {
 Aquí hay un ejemplo de un ciclo "do-while" en JavaScript:
 
 `code`
-```
+```js
 let i = 1;
 
 do {
@@ -492,7 +492,7 @@ ___
 ciclo "for-in" en JavaScript:
 
 `code`
-```
+```js
 const person = {
     name: "John",
     age: 30,
@@ -509,7 +509,7 @@ for (const key in person) {
 El ciclo imprimirá en la consola:
 
 `code`
-```
+```js
 name: John
 age: 30
 city: New York
@@ -522,7 +522,7 @@ city: New York
 Ejemplo ciclo infinito:
 
 `code`
-```
+```js
 while (true) {
     console.log("Este ciclo nunca termina");
 }
@@ -538,7 +538,7 @@ while (true) {
 >ejemplo de cómo mezclar ciclos y condicionales en JavaScript:
 
 `code`
-```
+```js
 for (let i = 1; i <= 10; i++) {
     if (i % 2 === 0) {
         console.log(`${i} es un número par`);
@@ -553,7 +553,7 @@ for (let i = 1; i <= 10; i++) {
 >El código imprimirá en la consola:
 
 `code`
-```
+```js
 1 es un número impar
 2 es un número par
 3 es un número impar
@@ -574,7 +574,7 @@ for (let i = 0; i < 5; i++) {
 }
 
 `code`
-```
+```js
 let i = 0;
 while (i < 5) {
 i++;
@@ -587,7 +587,7 @@ for (let i = 10; i >= 2; i--) {
 }
 
 `code`
-```
+```js
 let i = 10;
 while (i >= 2) {
 i--;
@@ -599,7 +599,7 @@ console.log("El valor de i es: " + i);
 _💡 Pista: puedes usar la función prompt de JavaScript._
 
 `code`
-```
+```js
 let respuesta = parseInt(prompt("¿Cuánto es 2 + 2?"));
 while (respuesta !== 4) {
 alert("Incorrecto, vuelve a intentarlo.");
@@ -619,7 +619,7 @@ alert("¡Felicidades, la respuesta es correcta!");
 >Un array es una estructura de datos que permite almacenar una colección de elementos, los cuales pueden ser de cualquier tipo de dato (numéricos, cadenas, objetos, etc.). Los elementos se acceden mediante un índice, el cual es un número que indica la posición del elemento en el array. En JavaScript, los arrays se crean utilizando la notación de corchetes []. 
 
 `code`
-```
+```js
 Ejemplo: var miArray = [1, 2, 3, 4, 5];
 ```
 
@@ -631,7 +631,7 @@ Ejemplo: var miArray = [1, 2, 3, 4, 5];
 >Un ejemplo de objeto podría ser:
 
 `code`
-```
+```js
 const persona = {
     nombre: "Juan",
     edad: 30,
@@ -658,7 +658,7 @@ const persona = {
 >Ejemplo:
 
 `code`
-```
+```js
 let persona = {
     nombre: "Juan",
     edad: 30,
@@ -671,7 +671,7 @@ let persona = {
 ### 2️⃣ Crea una función que pueda recibir cualquier array como parámetro e imprima su primer elemento.
 
  `code`
-```
+```js
 function imprimirPrimerElemento(arr) {
 console.log(arr[0]);
 }
@@ -680,13 +680,13 @@ console.log(arr[0]);
 >Por ejemplo:
 
 `code`
-```
+```js
 const numbers = [1, 2, 3, 4, 5];
 printFirstElement(numbers); // Imprimirá "1" en la consola.
 ```
 >Imprimiría el primer elemento del array que es *1*.
 
-```
+```js
 const names = ["John", "Jane", "Jim"];
 printFirstElement(names); // Imprimirá "John" en la consola.
 ```
@@ -698,7 +698,7 @@ printFirstElement(names); // Imprimirá "John" en la consola.
 >Ejemplo 
 
 `code`
-```
+```js
 function imprimirElementos(arr) {
   for (let i = 0; i < arr.length; i++) {
     console.log(arr[i]);
@@ -721,7 +721,7 @@ imprimirElementos(miArray);
 
 
 `code`
-```
+```js
 function imprimirElementos(obj) {
   for (let key in obj) {
     console.log(key + ": " + obj[key]);
@@ -738,7 +738,7 @@ imprimirElementos(miObjeto);
 
 
 `code`
-```
+```js
 function printElemetforElementObject(obj) {
     const arr = Object.values(obj);
     for (let i = 0; i <arr.length; i++) {
